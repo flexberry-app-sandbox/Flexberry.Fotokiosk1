@@ -1,0 +1,155 @@
+﻿{
+  "name": "IISFotokiosk1Клиент",
+  "modelName": "i-i-s-fotokiosk1-клиент",
+  "className": "Клиент",
+  "nameSpace": "IIS.Fotokiosk1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iD",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "оплата",
+      "relatedTo": "i-i-s-fotokiosk1-оплата",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "отправНаПочту",
+      "relatedTo": "i-i-s-fotokiosk1-отправ-на-почту",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КлиентE",
+      "modelName": "i-i-s-fotokiosk1-клиент",
+      "attrs": [
+        {
+          "name": "iD",
+          "caption": "ID",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "ОтправНаПочту",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Отправ на почту",
+          "name": "отправНаПочту",
+          "relatedTo": "i-i-s-fotokiosk1-отправ-на-почту",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Время",
+          "lookupValueField": "время",
+          "relationName": "Оплата",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "время",
+              "caption": "Время",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Оплата",
+          "name": "оплата",
+          "relatedTo": "i-i-s-fotokiosk1-оплата",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "КлиентL",
+      "modelName": "i-i-s-fotokiosk1-клиент",
+      "attrs": [
+        {
+          "name": "iD",
+          "caption": "ID",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ОтправНаПочту",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "отправНаПочту",
+          "relatedTo": "i-i-s-fotokiosk1-отправ-на-почту",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Оплата",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "время",
+              "caption": "Время",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Время",
+          "name": "оплата",
+          "relatedTo": "i-i-s-fotokiosk1-оплата",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

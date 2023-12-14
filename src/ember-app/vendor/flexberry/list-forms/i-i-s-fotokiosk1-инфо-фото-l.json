@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-fotokiosk1-инфо-фото-e",
+  "editForm": "i-i-s-fotokiosk1-инфо-фото-e",
+  "external": false,
+  "caption": "Инфо фото",
+  "name": "IISFotokiosk1ИнфоФотоL",
+  "className": "ИнфоФотоL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk1-инфо-фото",
+      "modelProjection": "ИнфоФотоL"
+    }
+  ]
+}

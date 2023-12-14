@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Fotokiosk1",
+  "className": "Категория",
+  "enumObjects": {
+    "НаДокументы": "",
+    "Развлекат": ""
+  }
+}
