@@ -28,35 +28,37 @@ export default Controller.extend({
             link: 'i-i-s-fotokiosk1-инфо-фото-l',
             caption: i18n.t('forms.application.sitemap.fotokiosk1.i-i-s-fotokiosk1-инфо-фото-l.caption'),
             title: i18n.t('forms.application.sitemap.fotokiosk1.i-i-s-fotokiosk1-инфо-фото-l.title'),
-            icon: 'suitcase',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-fotokiosk1-клиент-l',
             caption: i18n.t('forms.application.sitemap.fotokiosk1.i-i-s-fotokiosk1-клиент-l.caption'),
             title: i18n.t('forms.application.sitemap.fotokiosk1.i-i-s-fotokiosk1-клиент-l.title'),
+            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-fotokiosk1-отправ-на-почту-l',
             caption: i18n.t('forms.application.sitemap.fotokiosk1.i-i-s-fotokiosk1-отправ-на-почту-l.caption'),
             title: i18n.t('forms.application.sitemap.fotokiosk1.i-i-s-fotokiosk1-отправ-на-почту-l.title'),
-            icon: 'chart line',
+            icon: 'calendar',
             children: null
           }, {
             link: 'i-i-s-fotokiosk1-сделать-фото-l',
             caption: i18n.t('forms.application.sitemap.fotokiosk1.i-i-s-fotokiosk1-сделать-фото-l.caption'),
             title: i18n.t('forms.application.sitemap.fotokiosk1.i-i-s-fotokiosk1-сделать-фото-l.title'),
-            icon: 'briefcase',
+            icon: 'folder open',
             children: null
           }, {
             link: 'i-i-s-fotokiosk1-печать-фото-l',
             caption: i18n.t('forms.application.sitemap.fotokiosk1.i-i-s-fotokiosk1-печать-фото-l.caption'),
             title: i18n.t('forms.application.sitemap.fotokiosk1.i-i-s-fotokiosk1-печать-фото-l.title'),
+            icon: 'book',
             children: null
           }, {
             link: 'i-i-s-fotokiosk1-оплата-l',
             caption: i18n.t('forms.application.sitemap.fotokiosk1.i-i-s-fotokiosk1-оплата-l.caption'),
             title: i18n.t('forms.application.sitemap.fotokiosk1.i-i-s-fotokiosk1-оплата-l.title'),
-            icon: 'file',
+            icon: 'edit',
             children: null
           }]
         }
